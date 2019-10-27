@@ -266,7 +266,7 @@ public class ST_PuzzleDisplay : MonoBehaviour
 		TileDisplayArray = new GameObject[Width,Height];
 
 		// set the scale and position values for this puzzle.
-		Scale = new Vector3(1.0f/Width, 1.0f, 1.0f/Height);
+		Scale = new Vector3(1.0f/Width, 1.0f, 1.0f / Height);
 		Tile.transform.localScale = Scale;
 
 		// used to count the number of tiles and assign each tile a correct value.
@@ -278,9 +278,9 @@ public class ST_PuzzleDisplay : MonoBehaviour
 			for(int i = 0; i < Width; i++)
 			{
 				// calculate the position of this tile all centred around Vector3(0.0f, 0.0f, 0.0f).
-				Position = new Vector3(((Scale.x * (i + 0.5f))-(Scale.x * (Width/2.0f))) * (10.0f + SeperationBetweenTiles), 
-				                       0.0f, 
-				                      ((Scale.z * (j + 0.5f))-(Scale.z * (Height/2.0f))) * (10.0f + SeperationBetweenTiles));
+				Position = new Vector3(((Scale.x * (i + 0.5f))-(Scale.x * (Width/2.0f))) * (10.0f + SeperationBetweenTiles),
+                                        0.0f,
+                                      ((Scale.z * (j + 0.5f)) - (Scale.z * (Height / 2.0f))) * (10.0f + SeperationBetweenTiles));
 
 				// set this location on the display grid.
 				DisplayPositions.Add(Position);

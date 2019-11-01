@@ -34,8 +34,8 @@ public class ST_PuzzleDisplay : MonoBehaviour
 	private Vector3 Scale;
 	private Vector3 Position;
 
-	// has the puzzle been completed?
-	public bool Complete = false;
+    // has the puzzle been completed?
+    public static bool Complete;
 
 	// Use this for initialization
 	void Start () 
